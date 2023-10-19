@@ -24,16 +24,19 @@ const handleSubmit = (event) => {
          Quantity: ${formData.Quantity}, 
          Price: ${formData.Price}`
     );
+    console.log('===========ADD PRODUCT DATA==========');
     console.log('Name: ' + formData.Name);
     console.log('Description: ' + formData.Description);
     console.log('Category: ' + formData.Category);
     console.log('Quantity: ' + formData.Quantity);
     console.log('Price: ' + formData.Price);
+    console.log('====================================');
 };
 
 
   return (
     <form onSubmit={handleSubmit} className="add-product">
+      <h1 className="add-product__title">Add Product</h1>
       <label className="add-product__text" htmlFor="Name">
         Name:
       </label>
